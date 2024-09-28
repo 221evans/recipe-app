@@ -1,0 +1,6 @@
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Always two columns */
+    gap: 16px;
+    padding: 16px;
+}
