@@ -1,0 +1,40 @@
+.recipe-details {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    overflow-y: auto; /* Ensure content scrolls if too long */
+}
+
+.recipe-details img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.recipe-details button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+a {
+    color: #1e90ff; /* Ensure links are styled correctly */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

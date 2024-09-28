@@ -1,22 +1,19 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
-import RecipeCard from './RecipeCard';
 import './RecipeGrid.css';
 
 
 // eslint-disable-next-line react/prop-types
-const RecipeGrid = ({recipes}) => (
-    <div className="recipe-grid">
-        {/* eslint-disable-next-line react/prop-types */}
-        {recipes.map((recipe) => (
-            <RecipeCard
-                key={recipe.id}
-                title={recipe.title}
-                description={recipe.summary || "No description available"}
-                image={recipe.image}
-            />
-        ))}
-    </div>
-)
-
+const RecipeGrid = ({ recipes, onRecipeClick }) => {
+    return (
+        <div className="recipe-grid">
+            {recipes.map((recipe) => (
+                <div key={recipe.id} className="recipe-card" onClick={() => onRecipeClick(recipe.id)}>
+                    <h2>{recipe.title}</h2>
+                    <img src={recipe.image} alt={recipe.title} />
+                </div>
+            ))}
+        </div>
+    );
+};
 export default RecipeGrid;
