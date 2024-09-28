@@ -12,6 +12,7 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     overflow-y: auto; /* Ensure content scrolls if too long */
+    color: #1a1a1a;
 }
 
 .recipe-details img {
@@ -22,6 +23,7 @@
 
 .recipe-details button {
     position: absolute;
+    color: #1a1a1a;
     top: 8px;
     right: 8px;
     background: none;
@@ -38,3 +40,4 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
